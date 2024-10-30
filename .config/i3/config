@@ -225,7 +225,7 @@ client.background       #ffffff
 # Execs
 exec_always --no-startup-id picom -b -f
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id xinput --set-prop "pointer:pulsar X2 V2" 'libinput Accel Speed' -0.6
+exec_always --no-startup-id xinput --set-prop pointer:"Endgame Gear Endgame Gear OP1 8k Gaming Mouse" 'libinput Accel Speed' -0.9
 exec_always --no-startup-id xinput --set-prop "SYNA32B9:00 06CB:CE7D Touchpad" "libinput Natural Scrolling Enabled" 1
 exec_always --no-startup-id xinput --set-prop "SYNA32B9:00 06CB:CE7D Touchpad" "libinput Scrolling Pixel Distance" 1
 exec_always --no-startup-id xinput --set-prop "SYNA32B9:00 06CB:CE7D Touchpad" "libinput Tapping Enabled" 1
