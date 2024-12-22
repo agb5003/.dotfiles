@@ -1,5 +1,5 @@
 -- Set vim language
-vim.cmd("language en_US")
+vim.cmd("language en_US.UTF8")
 
 -- Make vim always use system clipboard
 vim.opt.clipboard = "unnamedplus"
@@ -14,4 +14,5 @@ vim.opt.expandtab = true
 require("config.lazy") -- this imports the settings in ~/.config/nvim/lua/config/lazy.lua
 -- don't ask me why the argument syntax looks like that. lua is fucking cursed
 
--- 
+-- Enable line numbers
+vim.opt.number = true
