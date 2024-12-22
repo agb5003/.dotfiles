@@ -15,3 +15,6 @@ vim.opt.clipboard = "unnamedplus"
 -- lazy.nvim
 require("config.lazy") -- This requires the file in .config/nvim/lua/config/lazy.lua
 -- don't ask why the argument looks like that. Lua is fucking cursed
+
+-- scrolloff (number of lines to keep above and below cursor when scrolling)
+vim.opt.scrolloff = 8
