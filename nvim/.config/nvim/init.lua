@@ -1,5 +1,5 @@
 -- Set vim language
-vim.cmd("language en_US.UTF8")
+vim.cmd("language en_US")
 
 -- Make vim always use system clipboard
 vim.opt.clipboard = "unnamedplus"
@@ -16,3 +16,4 @@ require("config.lazy") -- this imports the settings in ~/.config/nvim/lua/config
 
 -- Enable line numbers
 vim.opt.number = true
+
