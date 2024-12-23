@@ -1,3 +1,6 @@
 .DS_Store
 
 lazy-lock.json
+
+# Ignore lang.lua because for some weird reason the locales are platform specific - in macOS it should be en_US and on arch it has to be en_US.UTF8 (specifying the encoding)
+nvim/.config/nvim/lang.lua

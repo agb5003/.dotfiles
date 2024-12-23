@@ -1,5 +1,5 @@
--- Set vim language
-vim.cmd("language en_US")
+-- Set language
+require("lang")
 
 -- Make vim always use system clipboard
 vim.opt.clipboard = "unnamedplus"
