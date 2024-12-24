@@ -14,6 +14,7 @@ vim.keymap.set({'n', 'v'}, 'k', 'gk')
 
 -- Clear search highlight with escape
 vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>')
+vim.keymap.set('n', '<C-c>', ':noh<CR><Esc>')
 
 -- tabstop options
 vim.opt.tabstop = 4
