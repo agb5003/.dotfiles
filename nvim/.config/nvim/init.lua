@@ -1,5 +1,5 @@
 -- Set language
-require("lang")
+require("config.lang")
 
 -- Make vim always use system clipboard
 vim.opt.clipboard = "unnamedplus"
