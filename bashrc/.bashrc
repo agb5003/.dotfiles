@@ -11,3 +11,4 @@ PS1='[\u@\h \W]\$ '
 
 alias nvconfig="nvim ~/.config/nvim"
 alias i3config="nvim ~/.config/i3/config"
+alias ttyconfig="nvim ~/.config/alacritty/alacritty.toml"

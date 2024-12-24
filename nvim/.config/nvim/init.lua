@@ -8,6 +8,10 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
+-- Move through wrapped lines graphically
+vim.keymap.set({'n', 'v'}, 'j', 'gj')
+vim.keymap.set({'n', 'v'}, 'k', 'gk')
+
 -- Clear search highlight with escape
 vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>')
 
