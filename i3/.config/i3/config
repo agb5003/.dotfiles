@@ -1,7 +1,8 @@
 # Autoexecs
+exec --no-startup-id picom -b
 exec_always --no-startup-id xinput --set-prop "Logitech USB Receiver" "libinput Accel Speed" -0.91
 exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Speed" -0.91
-exec xrandr --output HDMI-1-0 --primary --right-of eDP-1 --rate 240 --mode 1920x1080
+exec --no-startup-id xrandr --output HDMI-1-0 --primary --right-of eDP-1 --rate 240 --mode 1920x1080
 
 exec --no-startup-id variety
 
@@ -9,8 +10,8 @@ exec --no-startup-id flameshot
 bindsym Print exec --no-startup-id flameshot gui
 
 # Gaps
-gaps inner 4
-gaps outer 4
+gaps inner 3
+gaps outer 0
 
 # Mod key
 set $mod Mod4

@@ -1,5 +1,5 @@
--- Set language
-require("config.lang")
+-- Require config directory
+require("config")
 
 -- Make vim always use system clipboard
 vim.opt.clipboard = "unnamedplus"
@@ -15,6 +15,9 @@ vim.keymap.set({'n', 'v'}, 'k', 'gk')
 -- Clear search highlight with escape
 vim.keymap.set('n', '<Esc>', ':noh<CR><Esc>')
 vim.keymap.set('n', '<C-c>', ':noh<CR><Esc>')
+
+-- Make Ctrl+c synonymous with Esc
+vim.keymap.set({'i', 'n', 'v'}, 'C-c', '<Esc>')
 
 -- tabstop options
 vim.opt.tabstop = 4
