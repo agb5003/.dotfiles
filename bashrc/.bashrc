@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+export PS1="\[\033[01;32m\]\u@\h\[\033[00m\] \w \\$ "
 
 alias nvconfig="nvim ~/.config/nvim"
 alias i3config="nvim ~/.config/i3/config"

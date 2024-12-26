@@ -28,21 +28,7 @@ return {
         theme = theme,
       },
       sections = {
-        lualine_a = {
-          {
-            modified_text,
-            separator = { right = "" },
-            padding = {
-              left = 3,
-              right = 3,
-            },
-            color = function()
-              if vim.bo.modified then
-                return { bg = colors.modified_background, fg = colors.default_text }
-              end
-            end,
-          },
-        },
+        lualine_a = {"mode"},
         lualine_b = {
           { "filename", file_status = false, path = 4 },
         },
