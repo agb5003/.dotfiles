@@ -11,6 +11,7 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[00m\] \w \\$ "
 
 alias nvconfig="nvim ~/.config/nvim"
 alias i3config="nvim ~/.config/i3/config"
+alias picomconfig="nvim ~/.config/picom/picom.conf"
 alias ttyconfig="nvim ~/.config/alacritty/alacritty.toml"
 alias advent="cd ~/dev/advent-of-code-24"
 alias leetcode="cd ~/dev/cpp-sandbox/leetcode/"
