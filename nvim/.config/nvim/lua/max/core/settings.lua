@@ -3,7 +3,9 @@ local ok, err = pcall(function()
         vim.cmd("language en_US.UTF8") -- Linux requires the encoding to be specified
 end)
 if not ok then
-        vim.cmd("language en_US") -- macOS just wants the locale
+        pcall(function()
+		vim.cmd("language en_US") -- macOS just wants the locale
+	end)
 end
 
 -- No swap files or backups (we have tmux for that)
