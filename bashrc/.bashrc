@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+neofetch
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -13,5 +15,5 @@ alias nvconfig="nvim ~/.config/nvim"
 alias i3config="nvim ~/.config/i3/config"
 alias picomconfig="nvim ~/.config/picom/picom.conf"
 alias ttyconfig="nvim ~/.config/alacritty/alacritty.toml"
-alias advent="cd ~/dev/advent-of-code-24"
-alias leetcode="cd ~/dev/cpp-sandbox/leetcode/"
+
+alias cs2="nvim ~/dev/cs2/"
