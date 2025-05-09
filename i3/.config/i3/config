@@ -1,8 +1,8 @@
 # Autoexecs
 exec --no-startup-id picom -b
 exec_always --no-startup-id xinput --set-prop "Logitech USB Receiver" "libinput Accel Speed" -0.95
-exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Speed" -0.95
-exec_always --no-startup-id xrandr --output HDMI-1 --primary --rate 240 --mode 1920x1080
+exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Speed" -0.6
+exec_always --no-startup-id xrandr --output HDMI-0 --primary --rate 240 --mode 1920x1080
 
 exec --no-startup-id variety
 
