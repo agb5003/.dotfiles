@@ -6,5 +6,5 @@ return {
             enabled = true,
             highlight = { "Function", "Label"}
         }
-    }
+    },
 }

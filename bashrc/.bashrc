@@ -9,7 +9,7 @@ neofetch
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-export PS1="\[\033[01;32m\]\u@\h\[\033[00m\] \w \\$ "
+export PS1=" \[\033[01;32m\]\u@\h\[\033[00m\] \w \\$ "
 
 alias nvconfig="nvim ~/.config/nvim"
 alias nfconfig="nvim ~/.config/neofetch/config.conf"

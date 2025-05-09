@@ -1,10 +1,10 @@
 # Autoexecs
 
-# Too slow
-# exec --no-startup-id picom -b
+# Start display compositor
+exec_always --no-startup-id picom -b
 
 # Use feh to show wallpaper
-exec --no-startup-id feh --bg-fill /home/max/Pictures/aoba.png
+exec_always --no-startup-id feh --bg-fill /home/max/Pictures/the-finals-cropped.jpeg
 #                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #                      Replace this with the path to your wallpaper image
 
@@ -15,7 +15,10 @@ exec --no-startup-id feh --bg-fill /home/max/Pictures/aoba.png
 exec --no-startup-id /usr/lib/pam_kwallet_init
 
 # Setup input devices
-exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Speed" -0.5
+# The following setup is as close as possible to Windows 7+ "Enhance pointer
+# precision" -> OFF and pointer speed 6/11.
+exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Profile Enabled" 0, 1
+exec_always --no-startup-id xinput --set-prop "Endgame Gear Endgame Gear OP1 8k Gaming Mouse" "libinput Accel Speed" 0
 
 # Setup monitor output
 exec_always --no-startup-id xrandr --output HDMI-0 --primary --rate 240 --mode 1920x1080
@@ -31,7 +34,7 @@ gaps outer 0
 # Colors
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #8fa658 #ffffff #bec7aa   #8fa658
+client.focused          #4287f5 #4287f5 #ffffff #4287f5   #4287f5
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -44,7 +47,25 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Cantarell 11
+font pango:Cantarell 12
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+    font pango:Cantarell 12
+    status_command i3status
+    tray_output primary
+    position bottom
+    colors {
+        background #333333
+        statusline #d5c4a1
+        separator #4a4a4a 
+        focused_workspace #4287f5 #4287f5 #ffffff
+        active_workspace #504945 #504945 #888888
+        inactive_workspace #504945 #504945 #888888
+        urgent_workspace   #7c6f64 #fabd2f #3c3836
+    }
+}
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -216,20 +237,3 @@ for_window [class="pwvucontrol"] floating enable
 for_window [class="Spotify"] floating enable
 for_window [window_role="pop-up"] floating enable
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-    font pango:Cantarell 10
-    status_command i3status
-    tray_output primary
-    position bottom
-    colors {
-        background #504945
-        statusline #d5c4a1
-        separator #3c3836 
-        focused_workspace #3c3836 #32302f #fabd2f
-        active_workspace #3c3836 #504945 #d5c4a1
-        inactive_workspace #3c3836 #504945 #d5c4a1
-        urgent_workspace   #7c6f64 #fabd2f #3c3836
-    }
-}
