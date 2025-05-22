@@ -75,8 +75,26 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
-    -- configure typescript server with plugin
-    lspconfig["ts_ls"].setup({
+    -- configure clangd
+    lspconfig["clangd"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure fortls
+    lspconfig["fortls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      cmd = {
+        'fortls',
+        '--lowercase_intrinsics',
+        '--hover_language=fortran',
+        '--use_signature_help'
+      }
+    })
+
+    -- configure cmake LSP
+    lspconfig["cmake"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
