@@ -1,6 +1,4 @@
 # Autoexecs
-<<<<<<< Updated upstream
-=======
 exec --no-startup-id xrandr --dpi 200
 exec --no-startup-id picom -b
 exec_always --no-startup-id xinput --set-prop "Logitech USB Receiver" "libinput Accel Speed" -0.95
@@ -10,7 +8,6 @@ exec_always --no-startup-id xinput --set-prop "ASUF1208:00 2808:0218 Touchpad" "
 exec_always --no-startup-id xinput --set-prop "ASUF1208:00 2808:0218 Touchpad" "libinput Natural Scrolling Enabled" 1
 exec_always --no-startup-id xinput --set-prop "ASUF1208:00 2808:0218 Touchpad" "libinput Tapping Enabled" 1
 exec --no-startup-id xrandr --output HDMI-1-0 --primary --right-of eDP-1 --rate 240 --mode 1920x1080
->>>>>>> Stashed changes
 
 # Start display compositor
 exec_always --no-startup-id picom -b

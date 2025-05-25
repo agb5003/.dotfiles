@@ -22,7 +22,7 @@
 
 opacity = 0.93
 
-padding.x = 0
+padding.x = 5
 padding.y = 0
 
 decorations = "Full"
