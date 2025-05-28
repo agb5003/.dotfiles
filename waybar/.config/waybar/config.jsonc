@@ -33,7 +33,7 @@
 
     "tray": {
         "spacing": 10,
-        "tooltip": false
+        "tooltip": true
     },
 
     "clock": {
@@ -74,12 +74,12 @@
         "format-disconnected" : "no network",
         "interval": 5,
         "on-click": "nmtui",
-        "tooltip": false
+        "tooltip": true
     },
 
     "pulseaudio": {
         "scroll-step": 5,
-        "max-volume": 150,
+        "max-volume": 100,
         "format": "vol {volume}%",
         "format-bluetooth": "vol {volume}%",
         "nospacing": 1,
