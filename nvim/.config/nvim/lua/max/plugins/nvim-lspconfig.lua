@@ -6,7 +6,6 @@ return {
   },
   enabled = true,
   config = function()
-    local lspconfig = require("lspconfig")
     local util = require("lspconfig.util")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -76,13 +75,13 @@ return {
     end
 
     -- configure clangd
-    lspconfig["clangd"].setup({
+    vim.lsp.config("clangd", {
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure fortls
-    lspconfig["fortls"].setup({
+    vim.lsp.config("fortls", {
       capabilities = capabilities,
       on_attach = on_attach,
       cmd = {
@@ -94,26 +93,26 @@ return {
     })
 
     -- configure cmake LSP
-    lspconfig["cmake"].setup({
+    vim.lsp.config("cmake", {
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure html server
-    lspconfig["html"].setup({
+    vim.lsp.config("html", {
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
     -- configure angular server
-    lspconfig["angularls"].setup({
+    vim.lsp.config("angularls", {
       capabilities = capabilities,
       on_attach = on_attach,
       root_dir = util.root_pattern("angular.json", "project.json", "nx.json"),
     })
 
     -- configure css server
-    lspconfig["cssls"].setup({
+    vim.lsp.config("cssls", {
       capabilities = capabilities,
       on_attach = on_attach,
     })
