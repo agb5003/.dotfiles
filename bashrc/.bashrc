@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # Custom prompt
-export PS1='\[\033[36m\]\u\[\033[00m\]@\H \[\033[3m\]\w\[\033[00m\] \\$ '
+export PS1='\[\033[36m\]\u\[\033[00m\]@\[\033[33m\]\H\[\033[00m\] \[\033[3;32m\]\w\[\033[00m\] \\$ '
 
 # PATH edits
 export PATH="$PATH:/home/max/.local/bin"
